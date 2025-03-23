@@ -26,7 +26,7 @@ func FNV(filepath string) ([]byte, error) {
 			return nil, err
 		}
 		if n != 0 {
-			hash.Write(buf[:n+1])
+			hash.Write(buf[:n])
 		} else {
 			break
 		}
